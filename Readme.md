@@ -2,18 +2,19 @@
 
 A lightweight REST client application similar to Postman, built with React and Express.
 
-## GitHub Repository
-🔗 [https://github.com/pratyushranjn/postman-lite](https://github.com/pratyushranjn/postman-lite)
-
 ## Features
-- Send GET, POST, PUT, DELETE requests
-- View real-time API responses without page reload
-- Store request history using MikroORM + SQLite
-- Pagination for large datasets
-- React frontend + Express backend
+- Send HTTP requests (GET, POST, PUT, DELETE)
+- Real-time API response rendering without page reload
+- Request history stored in database using MikroORM
+- Pagination implemented for handling large datasets efficiently
+- Clean React frontend with Express backend architecture
 
-## Tech Stack
-React, Node.js, Express, Axios, MikroORM, SQLite
+## 🛠 Tech Stack
+
+**Frontend:** React, JavaScript, CSS, Axios  
+**Backend:** Node.js, Express.js  
+**Database:** SQLite  
+**ORM:** MikroORM 
 
 ## How to Run
 
@@ -39,3 +40,13 @@ Client runs on `http://localhost:5173`
 
 ## Flow
 Frontend → Backend → Axios → External API → Response → Backend → Frontend
+
+## Project Structure
+
+postman-lite/
+- client/  # React frontend
+- server/  # Express backend with MikroORM
+
+
+## Author
+Pratyush Ranjan
