@@ -1,0 +1,178 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background: #f5f5f5;
+}
+
+/* Header */
+.app-header {
+  background: #ff6c37;
+  color: white;
+  padding: 15px 20px;
+}
+
+.logo {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+/* Layout */
+.app-layout {
+  display: flex;
+  height: calc(100vh - 51px);
+}
+
+.main-content {
+  flex: 1;
+  padding: 20px;
+  background: white;
+  overflow-y: auto;
+}
+
+.sidebar {
+  width: 300px;
+  background: #fafafa;
+  border-left: 1px solid #ddd;
+  padding: 20px;
+  overflow-y: auto;
+}
+
+.sidebar h3 {
+  font-size: 14px;
+  margin-bottom: 15px;
+  color: #666;
+}
+
+/* Request form */
+.request-box {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.url-bar {
+  display: flex;
+  gap: 10px;
+}
+
+.url-bar select {
+  width: 110px;
+}
+
+.url-bar input {
+  flex: 1;
+}
+
+.url-bar button {
+  width: 90px;
+}
+
+/* Inputs */
+input,
+select,
+textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+textarea {
+  min-height: 120px;
+  font-family: monospace;
+}
+
+/* Buttons */
+button {
+  background: #ff6c37;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover:not(:disabled) {
+  background: #e65a2f;
+}
+
+button:disabled {
+  background: #ccc;
+  cursor: not-allowed;
+}
+
+/* Response box */
+.response-box {
+  background: #f5f5f5;
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  max-height: 400px;
+  overflow: auto;
+  font-family: monospace;
+  font-size: 13px;
+}
+
+/* Error box */
+.error-box {
+  background: #ffebee;
+  color: #c62828;
+  padding: 12px;
+  border: 1px solid #ef9a9a;
+  border-radius: 4px;
+}
+
+/* History */
+.history-box {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.history-item {
+  background: white;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.history-item:hover {
+  border-color: #ff6c37;
+}
+
+.history-item span:first-child {
+  font-weight: bold;
+  color: #ff6c37;
+  display: block;
+  margin-bottom: 5px;
+}
+
+.history-item span:last-child {
+  color: #666;
+  font-size: 12px;
+  word-break: break-all;
+}
+
+/* Pagination */
+.pagination-btn {
+  margin-top: 15px;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+}
+
+.pagination-btn button {
+  padding: 8px 15px;
+}
+
+.pagination-btn span {
+  font-size: 13px;
+  color: #666;
+}
